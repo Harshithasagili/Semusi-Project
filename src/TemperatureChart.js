@@ -1,3 +1,5 @@
+
+
 import React, { useState, useEffect } from 'react';
 import { Scatter } from 'react-chartjs-2';
 import { Chart as ChartJS, LinearScale, PointElement, Tooltip, Legend } from 'chart.js';
@@ -69,7 +71,7 @@ const TemperatureChart = () => {
 
     return (
         <div>
-            
+            <h2>Ambient Temperature Monitor</h2>
             <label>Select Date: </label>
             <input type="date" value={selectedDate} onChange={handleDateChange} />
             <h3>Temperature Scatter Plot</h3>
@@ -100,7 +102,7 @@ const TemperatureChart = () => {
             )}
             {ambientTemperature !== null && (
                 <div>
-                    <h3>Calculated Ambient Temperature:</h3>
+                    <h3>Calculated Ambient Temperature</h3>
                     <p style={{ color: '#36A2EB' }}>
                         The ambient temperature for {selectedDate} is approximately {ambientTemperature.toFixed(2)} °C.
                     </p>
@@ -111,5 +113,3 @@ const TemperatureChart = () => {
 };
 
 export default TemperatureChart;
-
-
