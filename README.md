@@ -19,8 +19,14 @@ Follow these instructions to set up the project on your local machine.
 
    ```bash
    git clone https://github.com/Harshithasagili/Semusi-Project.git
-cd Semusi-Project
-code .
+1. Navigate to the project directory and open it in VS Code:
+
+   ```bash
+   cd Semusi-Project
+   code .
+
 npm install
+
 To run this project, you need to add your API key in an .env file in the root of the project. Create a file named .env and add the following line (replace YOUR_API_KEY with your actual API key):REACT_APP_WEATHER_API_KEY=YOUR_API_KEY
+
 npm start
